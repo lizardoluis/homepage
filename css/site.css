@@ -223,8 +223,9 @@ body {
 	border-radius: 90px;
 	/* 	float: left; */
 	/* 	margin: 18px; */
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	margin-left: 6px;
+	margin-top: 5px;
 	width: 120px;
 	height: 120px;
 	width: 120px;
@@ -233,7 +234,7 @@ body {
 
 .personal-data {
 	/* 		float: left; */
-	margin: 18px 6px 12px;
+	margin: 18px 5px 12px 128px;
 	/* 	width: 298px; */
 	/* 	display: inline; */
 }
