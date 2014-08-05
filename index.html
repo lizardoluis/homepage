@@ -36,12 +36,12 @@
 			</h1>
 
 			<ul class="nav nav-pills">
-				<li><a class="nav-link" href="#" onclick="initialize();">Home</a></li>
-				<li><a class="nav-link" href="#" onclick="showPersonal();">Personal</a></li>
-				<li><a class="nav-link" href="#" onclick="showEducation();">Education</a></li>
-				<li><a class="nav-link" href="#" onclick="showExperience();">Experience</a></li>
-				<!-- 				<li><a class="nav-link" href="#" onclick="showProjects();">Projects</a></li> -->
-				<li><a class="nav-link" href="#" onclick="showPublications();">Publications</a></li>
+				<li id="nav-home"><a class="nav-link" href="#" onclick="initialize(); selectNav('home');">Home</a></li>
+				<li id="nav-personal"><a class="nav-link" href="#" onclick="showPersonal(); selectNav('personal');">Personal</a></li>
+				<li id="nav-education"><a class="nav-link" href="#" onclick="showEducation(); selectNav('education');">Education</a></li>
+				<li id="nav-experience"><a class="nav-link" href="#" onclick="showExperience(); selectNav('experience');">Experience</a></li>
+				<!-- 				<li id="nav-projects"><a class="nav-link" href="#" onclick="showProjects(); selectNav('projects');">Projects</a></li> -->
+				<li id="nav-publications"><a class="nav-link" href="#" onclick="showPublications(); selectNav('publications');">Publications</a></li>
 			</ul>
 
 		</div>
@@ -154,12 +154,6 @@
 
 	<!-- Google Maps API -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-	
-	<!-- Hypher API -->
-	<script src="lib/hypher/jquery.hypher.js"></script>
-	<script src="lib/hypher/en-us.js"></script>
-
-<!-- <script src="lib/hyphenator/Hyphenator.js" type="text/javascript"></script> -->
 
 	<!-- Custom maps JS file -->
 	<script src="js/maps.js"></script>

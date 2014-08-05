@@ -182,7 +182,7 @@ function clearAllBoxes() {
 function showPersonal() {
 	clearAllBoxes();
 	$("#profile").show();
-	$("#map").show();
+	$("#map").show();	
 }
 
 function showEducation() {
@@ -204,6 +204,11 @@ function showPublications() {
 	for ( var i in publications) {
 		addBox(publications[i], getSmallerColumn(), "yellow");
 	}
+}
+
+function selectNav(nav){
+	$(".nav-link").parent().removeClass("disabled");
+	$("#nav-" + nav).addClass("disabled");
 }
 
 function expandDescription(btn) {
@@ -241,11 +246,10 @@ function expandMap(btn) {
 	btn.children().toggleClass("glyphicon-resize-full glyphicon-resize-small");
 }
 
+
 function initialize() {
 
 	showPersonal();
-
-	var column = 0;
 
 	for ( var i = 0;; i++) {
 		if (i < studies.length) {
@@ -267,4 +271,5 @@ function initialize() {
 
 $(document).ready(function() {
 	initialize();
+	selectNav("home");
 });
