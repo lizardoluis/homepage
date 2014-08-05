@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-	padding-top: 20px;
+	/* 	padding-top: 20px; */
 	padding-bottom: 20px;
 	background-color: #eee;
 }
@@ -17,7 +17,7 @@ body {
 	transition: color .3s;
 	letter-spacing: -0.02em;
 	font-size: 18px;
-/* 	font-size: 1.125rem; */
+	/* 	font-size: 1.125rem; */
 	line-height: 24px;
 	line-height: 1.5rem;
 	color: #afb6be;
@@ -25,12 +25,6 @@ body {
 	text-decoration: none;
 }
 
-
-/* Custom page header */
-.header {
-	/*   border-bottom: 1px solid #e5e5e5; */
-	
-}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
 	padding-bottom: 19px;
@@ -61,8 +55,292 @@ body {
 	.header {
 		margin-bottom: 30px;
 	}
-	/* Remove the bottom border on the jumbotron for visual effect */
-	.jumbotron {
-		border-bottom: 0;
+}
+
+.page-header h1 {
+	letter-spacing: -0.04em;
+	font-size: 42px;
+	/* font-size: 2.625rem; */
+	line-height: 60px;
+	/* line-height: 3.75rem; */
+	color: #3d434b;
+	font-weight: 700;
+	/* 	padding: 18px 0 0 12px; */
+}
+
+.box {
+	margin-bottom: 25px;
+	/* 	background-color: #fff; */
+	/* 	border: 1px solid transparent; */
+	/* 	border-radius: 4px; */
+	/* 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
+	/* 	box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
+	border: 1px solid #eee;
+	background: white;
+	float: left;
+	padding: 0;
+	width: 100%;
+	/* 	margin: 0 9px 20px; */
+}
+
+.box .box-head {
+	border-bottom: 1px solid #eee;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.box .box-body {
+	float: left;
+	position: relative;
+	width: 100%;
+/* 	padding: 12px 12px 12px 12px; */
+}
+
+.box .box-body p {
+	letter-spacing: -0.01em;
+	font-size: 15px;
+/* 	font-size: .9375rem; */
+	line-height: 21px;
+/* 	line-height: 1.3125rem; */
+	color: #6b7583;
+	float: left;
+	margin: 12px;
+}
+
+.box-green {
+	-moz-box-shadow: 0 2px 0 #1abc9c inset;
+	-webkit-box-shadow: 0 2px 0 #1abc9c inset;
+	box-shadow: 2 2px 0 #1abc9c inset;
+}
+
+.box-blue {
+	-moz-box-shadow: 0 2px 0 #4a89dc inset;
+	-webkit-box-shadow: 0 2px 0 #4a89dc inset;
+	box-shadow: 0 2px 0 #4a89dc inset;
+}
+
+.box-red {
+	-moz-box-shadow: 0 2px 0 #bc1a3a inset;
+	-webkit-box-shadow: 0 2px 0 #bc1a3a inset;
+	box-shadow: 0 2px 0 #bc1a3a inset;
+}
+
+.box-yellow {
+	-moz-box-shadow: 0 2px 0 #bc1a3a inset;
+	-webkit-box-shadow: 0 2px 0 #bc1a3a inset;
+	box-shadow: 0 2px 0 #bc9c1a inset;
+}
+
+#map-canvas {
+	height: 216px;
+	width: 100%;
+}
+
+.info-pretitle {
+	letter-spacing: 0;
+	font-size: 13px;
+	/* 	font-size: .8125rem; */
+	line-height: 18px;
+	/* 	line-height: 1.125rem; */
+	color: #afb6be;
+	float: left;
+	padding: 18px 12px 0;
+}
+
+.info-title {
+	letter-spacing: -0.02em;
+	font-size: 20px;
+	/* 	font-size: 1.5rem; */
+	line-height: 30px;
+	/* 	line-height: 1.875rem; */
+	color: #3d434b;
+	float: left;
+	margin: 12px 0px 12px 12px;
+	word-wrap: break-word;
+	padding-right: 6px;
+	width: 90%;
+}
+
+.info-place {
+	letter-spacing: -0.01em;
+	font-size: 15px;
+	/* 	font-size: .9375rem; */
+	line-height: 21px;
+	/* 	line-height: 1.3125rem; */
+}
+
+.info-place-green {
+	color: #1abc9c;
+}
+
+.info-place-blue {
+	color: #4a89dc;
+}
+
+.info-place-red {
+	color: #bc1a3a;
+}
+
+.info-place-yellow {
+	color: #bc9c1a;
+}
+
+.info-address {
+	letter-spacing: 0;
+	font-size: 13px;
+	/* 	font-size: .8125rem; */
+	line-height: 18px;
+	/* 	line-height: 1.125rem; */
+	color: #6b7583;
+	margin-top: 6px;
+}
+
+.info-dates {
+	letter-spacing: 0;
+	font-size: 11px;
+	/* 	font-size: .6875rem; */
+	line-height: 18px;
+	/* 	line-height: 1.125rem; */
+	color: #afb6be;
+	margin: 6px 0 18px;
+}
+
+.info-place,.info-address,.info-dates {
+	float: left;
+	padding: 0 12px;
+}
+
+.personal {
+	padding: 0;
+	margin: 18px;
+	float: left;
+}
+
+.personal-photo {
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+	border-radius: 90px;
+	/* 	float: left; */
+	/* 	margin: 18px; */
+	margin-bottom: 18px;
+	margin-left: 6px;
+	width: 120px;
+	height: 120px;
+	width: 120px;
+	width: 120px;
+}
+
+.personal-data {
+	/* 		float: left; */
+	margin: 18px 6px 12px;
+	/* 	width: 298px; */
+	/* 	display: inline; */
+}
+
+.personal-data h2 {
+	letter-spacing: -0.02em;
+	font-size: 24px;
+	/* 	font-size: 1.5rem; */
+	line-height: 30px;
+	/* 	line-height: 1.875rem; */
+	color: #3d434b;
+	/* 	width: 282px; */
+	word-wrap: break-word;
+}
+
+.personal-data ol,ul {
+	list-style: none;
+}
+
+.personal-data ul {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+.personal-about {
+	letter-spacing: 0;
+	font-size: 13px;
+	/* 	font-size: .8125rem; */
+	line-height: 18px;
+	/* 	line-height: 1.125rem; */
+	color: #6b7583;
+	margin: 24px 0 3px;
+	/* 	width: 282px; */
+}
+
+.personal-place-age {
+	letter-spacing: 0;
+	font-size: 11px;
+	/* 	font-size: .6875rem; */
+	line-height: 18px;
+	/* 	line-height: 1.125rem; */
+	color: #afb6be;
+}
+
+.personal-data .btn {
+	margin: 0 3px;
+}
+
+@media ( min-width : 600px) {
+	.personal-data .icon {
+		-webkit-transition: background-color 1s ease;
+		-moz-transition: background-color 1s ease;
+		-ms-transition: background-color 1s ease;
+		-o-transition: background-color 1s ease;
 	}
+}
+
+.personal .icon {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	display: inline-block;
+	width: 30px;
+	padding: 4px 0;
+	/* 	vertical-align: middle; */
+	text-align: center;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: #c4c4c4;
+}
+
+.personal .icon:hover#email,.personal .icon:active#email {
+	background-color: #a8dba8;
+}
+
+.personal .icon:hover#github,.personal .icon:active#github {
+	background-color: #444;
+}
+
+.personal .icon:hover#linkedin,.personal .icon:active#linkedin {
+	background-color: #4875b4
+}
+
+.personal .icon:hover#facebook,.personal .icon:active#facebook {
+	background-color: #4c66a4
+}
+
+.btn-green {
+	color: #1abc9c;
+}
+
+.btn-blue {
+	color: #4a89dc;;
+}
+
+.btn-red {
+	color: #bc1a3a;
+}
+
+.btn-yellow {
+	color: #bc9c1a;
 }

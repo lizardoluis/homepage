@@ -12,6 +12,12 @@
 <!-- Custom styles for this template -->
 <link href="css/site.css" rel="stylesheet">
 
+<!-- Font awesome -->
+<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+<!-- Bootstrap social -->
+<link rel="stylesheet"
+	href="lib/bootstrap-social-gh-pages/bootstrap-social.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,96 +36,135 @@
 			</h1>
 
 			<ul class="nav nav-pills">
-				<li><a class="nav-link" href="#">Home</a></li>
-				<li><a class="nav-link" href="#">Personal</a></li>
-				<li><a class="nav-link" href="#">Education</a></li>
-				<li><a class="nav-link" href="#">Experience</a></li>
+				<li><a class="nav-link" href="#" onclick="initialize();">Home</a></li>
+				<li><a class="nav-link" href="#" onclick="showPersonal();">Personal</a></li>
+				<li><a class="nav-link" href="#" onclick="showEducation();">Education</a></li>
+				<li><a class="nav-link" href="#" onclick="showExperience();">Experience</a></li>
+				<!-- 				<li><a class="nav-link" href="#" onclick="showProjects();">Projects</a></li> -->
+				<li><a class="nav-link" href="#" onclick="showPublications();">Publications</a></li>
 			</ul>
+
+		</div>
+
+		<div class="row">
+			<div id="column-expanded" class="col-lg-12"></div>
 		</div>
 
 		<div class="row">
 
 			<div class="col-lg-6">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-							faucibus mollis interdum.</p>
+
+				<div id="profile" class="box">
+					<ul class="personal">
+						<li><img class="personal-photo img-circle img-responsive"
+							src="img/me.jpg" alt="..."></li>
+
+						<li><a id="email" data-toggle="tooltip"
+							data-placement="bottom" title="lizardo.luis@gmail.com"
+							href="mailto:lizardo.luis@gmail.com" target="blank" class="icon"><i
+								class="fa fa-envelope"></i></a> <a id="github" data-toggle="tooltip"
+							data-placement="bottom" title="GitHub"
+							href="https://github.com/lizardoluis" target="blank" class="icon"><i
+								class="fa fa-github"></i></a> <a id="linkedin" data-toggle="tooltip"
+							data-placement="bottom" title="LinkedIn"
+							href="https://br.linkedin.com/in/lizardoluis/en" target="blank"
+							class="icon"><i class="fa fa-linkedin"></i></a> <a id="facebook"
+							data-toggle="tooltip" data-placement="bottom" title="Facebook"
+							href="https://facebook.com/lizardo.luis" target="blank"
+							class="icon"><i class="fa fa-facebook"></i></a></li>
+					</ul>
+
+					<ul class="personal-data">
+						<li><h2>Luís Eduardo Oliveira Lizardo</h2></li>
+						<li><p class="personal-about">Computer Scientist looking
+								for an intership in na very nice place to work because I want to
+								put my interests into practice</p></li>
+						<li><p class="personal-place-age">Belo Horizonte, Brazil
+								- 23 years old</p></li>
+					</ul>
+				</div>
+
+				<div class="row">
+
+					<!-- 1st column -->
+					<div id="column-1" class="col-lg-6"></div>
+					<!-- End 1st column -->
+
+					<!-- 2nd column -->
+					<div id="column-2" class="col-lg-6"></div>
+					<!-- End 2nd column -->
+				</div>
+
+			</div>
+
+			<div id="column-map" class="col-lg-3">
+				<div id="map" class="box">
+					<div class="box-head">
+						<span class="info-title">Where I have been</span>
 					</div>
+					<div class="box-body">
+						<div id="map-canvas"></div>
+						<button type="button" class="btn btn-link btn-block"
+							onclick="expandMap($(this))">
+							<span class="glyphicon glyphicon-resize-full"></span>
+						</button>
+					</div>
+				</div>
+
+				<div class="row"> 
+					<!-- 3rd column -->
+					<div id="column-3" class="col-lg-12"></div>
+					<!-- End 3rd column -->
 				</div>
 			</div>
 
-			<div class="col-lg-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Morbi leo risus, porta ac consectetur ac, vestibulum at
-							eros. Cras mattis consectetur purus sit amet fermentum.</p>
-					</div>
-				</div>
-			</div>
+			<!-- 4th column -->
+			<div id="column-4" class="col-lg-3"></div>
+			<!-- End 4th column -->
 
-			<div class="col-lg-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Morbi leo risus, porta ac consectetur ac, vestibulum at
-							eros. Cras mattis consectetur purus sit amet fermentum.</p>
-					</div>
-				</div>
-			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-							faucibus mollis interdum.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-							faucibus mollis interdum.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-							faucibus mollis interdum.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4>Subheading</h4>
-						<p>Donec id elit non mi porta gravida at eget metus. Maecenas
-							faucibus mollis interdum.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
 	<!-- /container -->
+
+	<!-- Box Template -->
+	<div id="template-box" hidden>
+		<div class="box">
+			<div class="box-head">
+				<span class="info-pretitle"></span> <span class="info-title"></span>
+				<a class="info-place" target="blank" href=""></a> <span
+					class="info-address"></span> <span class="info-dates"></span>
+			</div>
+			<div class="box-body">
+				<p></p>
+				<button type="button"
+					class="box-btn btn btn-link btn-sm btn-block hidden"
+					onclick="expandDescription($(this));">
+					<span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="lib/jquery/1.11.1/jquery.min.js"></script>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Bootstrap -->
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Google Maps API -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	
+	<!-- Hypher API -->
+	<script src="lib/hypher/jquery.hypher.js"></script>
+	<script src="lib/hypher/en-us.js"></script>
+
+<!-- <script src="lib/hyphenator/Hyphenator.js" type="text/javascript"></script> -->
+
+	<!-- Custom maps JS file -->
+	<script src="js/maps.js"></script>
+
+	<!-- Custom JS file -->
+	<script src="js/main.js"></script>
 </body>
 </html>
