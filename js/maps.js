@@ -32,9 +32,20 @@ function initMapBig() {
  * order in which these markers should display on top of each other.
  */
 var placesLived = [ [ 'Belo Horizonte', -19.8157, -43.9542, 5 ],
-		[ 'Schmalkalden', 50.716667, 10.450000, 5 ] ];
+		[ 'Schmalkalden', 50.716667, 10.450000, 5 ],
+		[ 'Böblingen', 48.6856, 9.0153, 5 ] ];
 
 var placesVisited = [ [ 'Berlin', 52.5243700, 13.4105300, 2 ],
+		[ 'Stuttgart', 48.7833, 9.1833, 2 ],
+		[ 'Krakow', 50.0614, 19.9383, 2 ],
+		[ 'Wrocław', 51.1000, 17.0333, 2 ],
+		[ 'Amsterdam', 52.3667, 4.9000, 2 ],
+		[ 'Katowice', 50.2667, 19.0167, 2 ],
+		[ 'Lisbon', 38.7139, -9.1394, 2 ],
+		[ 'Rotterdam', 51.9167, 4.5000, 2 ],
+		[ 'Stockholm', 59.3294, 18.0686, 2 ],
+		[ 'Edimburg', 55.9531, -3.1889, 2 ],
+		[ 'St. Andrews', 56.3404, -2.7955, 2 ],		
 		[ 'London', 51.5085300, -0.1257400, 2 ],
 		[ 'Munich', 48.1374300, 11.5754900, 2 ],
 		[ 'Hamburg', 53.5500000, 10.0000000, 2 ],

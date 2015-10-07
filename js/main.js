@@ -43,8 +43,17 @@ var studies = [
 
 var jobs = [
 		{
+			pretitle : "Internship", 
+			title : "Software Engineer",
+			place : "IBM Deutschland Recearch & Development",
+			link : "http://www.ibm.com/de/de/",
+			address : "Böblingen, Germany",
+			dates : "August 2015 / Current",	
+			description : ""
+		},
+		{
 			pretitle : "Work Experience",
-			title : "Software Developer",
+			title : "Software Engineer",
 			place : "a2bme",
 			link : "http://www.a2bme.com/",
 			address : "Schmalkalden, Germany",
