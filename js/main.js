@@ -246,7 +246,7 @@ function showPublications() {
 
 function showProjects() {
 	clearAllBoxes();
-	for ( var i in publications) {
+	for ( var i in projects) {
 		addBox(projects[i], getSmallerColumn(), "red");
 	}
 }
