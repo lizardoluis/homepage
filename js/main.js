@@ -11,7 +11,7 @@ var studies = [
 			link : "https://www.ufmg.br/",
 			address : "Belo Horizonte, Brazil",
 			dates : "February 2014 / February 2016",
-			description : "Currently researching about spatial data modeling and NoSQL databases for spatial data."
+			description : "Thesis: A SQL extension to support advanced spatial data types and integrity constraints."
 		},
 		{
 			pretitle : "Studies",
@@ -43,13 +43,13 @@ var studies = [
 
 var jobs = [
 		{
-			pretitle : "Internship", 
+			pretitle : "Internship",
 			title : "Software Engineer",
 			place : "IBM Deutschland Recearch & Development",
 			link : "http://www.ibm.com/de/de/",
 			address : "Böblingen, Germany",
-			dates : "August 2015 / Current",	
-			description : ""
+			dates : "August 2015 / December 2015",
+			description : "Work with the IBM DB2 Analytics Accelerator team. I developed a BASH framework."
 		},
 		{
 			pretitle : "Work Experience",
@@ -58,7 +58,7 @@ var jobs = [
 			link : "http://www.a2bme.com/",
 			address : "Schmalkalden, Germany",
 			dates : "August 2012 / February 2013",
-			description : "Designer/coder of a geographic project in Java. "
+			description : "Coder of a geographic project in Java. "
 					+ "Worked with the Apache Cassandra database and " +
 							"Apache Lucene search engine library."
 		},
@@ -70,10 +70,10 @@ var jobs = [
 			address : "Belo Horizonte, Brazil",
 			dates : "January 2010 / March 2012",
 			description : "Website designer/coder. SharePoint administrator. "
-					+ "Proposed, designed, implemented and managed Web solutions"
+					+ "Proposed and implemented Web solutions"
 					+ " to centralize strategic information of the Invoice and"
 					+ " Business Relationship Departments at the intranet. "
-					+ "Proposed and developed small applications in Flash "
+					+ "Developed small applications in Flash "
 					+ "to assist new employees training."
 		},
 		{
@@ -94,7 +94,7 @@ var publications = [
 			pretitle : "Publication",
 			title : "OMT-G Designer: A web tool for modeling geographic databases in OMT-G",
 			place : "SeCoGIS, 2014",
-			link : "http://link.springer.com/chapter/10.1007/978-3-319-12256-4_24#page-1", 
+			link : "http://link.springer.com/chapter/10.1007/978-3-319-12256-4_24#page-1",
 			description : 'Data modeling tools are useful in software development and in database design. Some advanced modeling tools available in the market go beyond the data modeling process and allow the generation of source code or DDL scripts for RDBMSs based on the modeled schema. This work presents OMT-G Designer, a web tool for modeling geographic databases using OMT-G, an object-oriented data model for geographic applications. The tool provides various consistency checks on the integrity of the schema, and includes a function that maps OMT-G geographic conceptual schemas into physical schemas, including the necessary spatial integrity constraints. The tool was developed using free software and aims to increase the practical and academic uses of OMT-G, by providing an open and platform-independent modeling resource.'
 		},
 		{
@@ -102,49 +102,50 @@ var publications = [
 			title : "GeoNoSQL: Geospatial database in NoSQL",
 			place : "Computer on the Beach, 2014",
 			link : "http://www6.univali.br/seer/index.php/acotb/article/view/5332",
-			// description : 'Lizardo, Luís EO, Mirella M. Moro, and Clodoveu A.
-			// Davis Jr. "GeoNoSQL: Banco de dados geoespacial em NoSQL." Anais
-			// do Computer on the Beach(2014): p-303. (Portuguese)'
 			description : 'Geospatial data are created, stored and used today in an unprecedented rate. However, the large volume of data collected from geographic sensors, satellites, social networks and other location services has become a challenge for relational database management systems. In this scenario, non-relational database management systems, known as NoSQL, can provide more efficient solutions to handle big volumes of data. This paper proposes the construction of a spatial NoSQL prototype, called GeoNoSQL, using Apache Cassandra, a non-relational database management system with high scalability and performance. Our experiments show that GeoNoSQL performs better than PostGIS, the spatial extension for PostgreSQL.'
-		},
-// {
-// pretitle : "Publication",
-// title : "PostgreSQL: uma alternativa para sistemas gerenciadores de banco de
-// dados de código aberto",
-// place : "Congresso Nacional Universidade, EAD e Software Livre, 2012",
-// description : 'Amaral, Hugo Richard, Luis Eduardo Oliveira Lizardo, and
-// Arthur Camara Vieira de Souza. "PostgreSQL: uma alternativa para sistemas
-// gerenciadores de banco de dados de código aberto." Anais do Congresso
-// Nacional Universidade, EAD e Software Livre. Vol. 2. No. 2. 2012.
-// (Portuguese)'
-// }
-];
+		} ];
 
 var projects = [
-    		{
-    			pretitle : "Undergraduate Project",
-    			title : "OMT-G Designer",
-    			place : "See more..",
-    			link : "http://www.aqui.io/omtg",
-    			description : "OMT-G Designer is an online diagramming application " +
-    					"for the design of geographic database systems and " +
-    					"applications based on OMT-G data model."
-    		},
-    		{
-    			pretitle : "Lecture Project",
-    			title : "irSearch",
-    			place : "See more..",
-    			link : "http://greenwich.lbd.dcc.ufmg.br/lizardo/ri/",
-    			description : "irSearch is simple search engine able to index" +
-    					" HTML pages and to retrieve using some IR simple" +
-    					" models. This project was made for the lecture " +
-    					"Information Retrievel - Web Search Engine offered in " +
-    					"UFMG. For more information about the lecture go to " +
-    					"http://goo.gl/w6Hkvh. The models implemented in " +
-    					"irSearch are: Okapi BM25, Cosine, PageRank, Boolean " +
-    					"and some combinations of them. irSearch is currently " +
-    					"running with a 5GB collection."
-    		}];
+      {
+         pretitle : "Master Project",
+         title : "AST-PostGIS",
+         place : "See more..",
+         link : "https://github.com/lizardoluis/ast_postgis",
+         description : "The AST-PostGIS is an extension for PostgreSQL/PostGIS " +
+         "that incorporates advanced spatial data types and implements spatial " +
+         "integrity constraints. The extension reduces the distance between " +
+         "the conceptual and the physical designs of spatial databases, by " +
+         "providing richer representations for geo-object and geo-field geometries. " +
+         "It also offers procedures to assert the consistency of spatial relationships " +
+         "during data updates. Such procedures can also be used before enforcing " +
+         "spatial integrity constraints for the first time."
+      },
+ 		{
+ 			pretitle : "Undergraduate Project",
+ 			title : "OMT-G Designer",
+ 			place : "See more..",
+ 			link : "http://www.aqui.io/omtg",
+ 			description : "OMT-G Designer is an online diagramming application " +
+         "for the design of geographic database systems and applications based " +
+         "on OMT-G, an object-oriented data model for geographic applications. " +
+         "It aims to increase the practical and academic uses of this data model, " +
+         "by providing an open and platform-independent modeling resource."
+ 		},
+ 		{
+ 			pretitle : "Lecture Project",
+ 			title : "irSearch",
+ 			place : "See more..",
+ 			link : "http://greenwich.lbd.dcc.ufmg.br/lizardo/ri/",
+ 			description : "irSearch is simple search engine able to index" +
+ 					" HTML pages and to retrieve using some IR simple" +
+ 					" models. This project was made for the lecture " +
+ 					"Information Retrievel - Web Search Engine offered in " +
+ 					"UFMG. For more information about the lecture go to " +
+ 					"http://goo.gl/w6Hkvh. The models implemented in " +
+ 					"irSearch are: Okapi BM25, Cosine, PageRank, Boolean " +
+ 					"and some combinations of them. irSearch is currently " +
+ 					"running with a 5GB collection."
+ 		} ];
 
 function addBox(info, column, color) {
 	// Clone template
@@ -219,7 +220,7 @@ function clearAllBoxes() {
 function showPersonal() {
 	clearAllBoxes();
 	$("#profile").show();
-	$("#map").show();	
+	$("#map").show();
 }
 
 function showEducation() {
@@ -270,13 +271,13 @@ function expandDescription(btn) {
 }
 
 function expandMap(btn) {
-	
+
 	if (btn.children().is('.glyphicon-resize-full')) {
 		clearAllBoxes();
-		
+
 		$("#map").appendTo('#column-expanded');
 		$("#map").show();
-		
+
 		$("#map-canvas").height($("#map-canvas").height()*2.5);
 		initMapBig();
 	}
@@ -285,14 +286,14 @@ function expandMap(btn) {
 		$("#map-canvas").height($("#map-canvas").height()/2.5);
 		initMapSmall();
 		initialize();
-	}	
-	
+	}
+
 	btn.children().toggleClass("glyphicon-resize-full glyphicon-resize-small");
 }
 
 
 function initialize() {
-	
+
 	showPersonal();
 
 	for ( var i = 0;; i++) {
@@ -303,7 +304,7 @@ function initialize() {
 		if (i < jobs.length) {
 			addBox(jobs[i], getSmallerColumn(), "blue");
 		}
-				
+
 		if (i < projects.length) {
 			addBox(projects[i], getSmallerColumn(), "red");
 		}
