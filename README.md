@@ -1,4 +1,6 @@
-# homepage
-My homepage
+luislizardo.me
+==============
 
-http://homepages.dcc.ufmg.br/~lizardo/
+**Source files of my personal website: [www.luislizardo.me](http://www.luislizardo.me)**
+
+:)
