@@ -49,7 +49,7 @@ var jobs = [
 			link : "http://www.ibm.com/de/de/",
 			address : "Böblingen, Germany",
 			dates : "August 2015 / December 2015",
-			description : "Work with the IBM DB2 Analytics Accelerator team. I developed a BASH framework."
+			description : "Worked in the IBM DB2 Analytics Accelerator team. I developed a BASH framework."
 		},
 		{
 			pretitle : "Work Experience",
