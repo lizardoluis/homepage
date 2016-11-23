@@ -25,7 +25,7 @@ var studies = [
 		{
 			pretitle : "Studies",
 			title : "Exchange Student",
-			place : "FH-Schmalkalden",
+			place : "HS-Schmalkalden",
 			link : "http://www.fh-schmalkalden.de/",
 			address : "Schmalkalden, Germany",
 			dates : "February 2009 / December 2013",
